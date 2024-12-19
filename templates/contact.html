@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MediPredict - Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+         .logo {
+        width: 50px;
+        height: 50px;
+        margin-left: 2px;
+      }
+
+      .myimg {
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 25px;
+      }
+        body {
+            background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+        }
+
+        .contact-header {
+            text-align: center;
+            margin: 2rem 0;
+            color: #343a40;
+        }
+
+        .contact-header h4 {
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+
+        .contact-header p {
+            font-size: 1.2rem;
+        }
+
+        .contact-card {
+            border: none;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .contact-card .card-header {
+            background: #0d6efd;
+            color: white;
+            font-weight: bold;
+            font-size: 1.3rem;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .contact-card .card-body p {
+            font-size: 1.1rem;
+        }
+
+
+        .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .social-icons a {
+        text-decoration: none;
+    }
+
+    .social-icons .btn {
+        border-radius: 50px;
+        font-size: 1.2rem;
+        padding: 0.5rem 1.2rem;
+        margin: 5px;
+    }
+
+    .social-icons .btn-facebook {
+        background: #3b5998;
+    }
+
+    .social-icons .btn-twitter {
+        background: #1da1f2;
+    }
+
+    .social-icons .btn-linkedin {
+        background: #0077b5;
+    }
+
+    .social-icons .btn-instagram {
+        background: #e4405f;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <img class="myimg" src="{{ url_for('static', filename='Mlogo.jpg') }}" alt="">
+            </div>
+            <a class="navbar-brand" href="#">MediPredict</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/predict">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/howtouse">How to Use</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Us Section -->
+    <div class="container my-5">
+        <div class="contact-header">
+            <h4>Contact Us</h4>
+            <p>We’d love to hear from you! Reach out for questions, feedback, or assistance.</p>
+        </div>
+
+        <div class="row gy-4">
+            <!-- Email Card -->
+            <div class="col-md-4">
+                <div class="card contact-card">
+                    <div class="card-header">
+                        <i class="fas fa-envelope"></i> Email Us
+                    </div>
+                    <div class="card-body">
+                        <p>General Inquiries: <strong>contact@medipredict.com</strong></p>
+                        <p>Business: <strong>business@medipredict.com</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="col-md-4">
+                <div class="card contact-card">
+                    <div class="card-header">
+                        <i class="fas fa-phone"></i> Call Us
+                    </div>
+                    <div class="card-body">
+                        <p>Phone: <strong>+1 (800) 123-4567</strong></p>
+                        <p>Support available 9 AM - 5 PM (EST).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media Card -->
+            <div class="col-md-4">
+                <div class="card contact-card">
+                    <div class="card-header">
+                        <i class="fas fa-share-alt"></i> Follow Us
+                    </div>
+                    <div class="card-body">
+                        <div class="social-icons text-center">
+                            <a href="#" class="btn btn-facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                            <a href="#" class="btn btn-twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                            <a href="#" class="btn btn-linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                            <a href="#" class="btn btn-instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>
